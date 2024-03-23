@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: url(/IMG/FUNDO.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+    background-color: white;
+}
+
+#Home{
+    color: #E60012;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+}
+
+#Home:hover{
+    border-bottom: 2px solid #0072C6;
+    color: #0072C6;
+}
+
+.navegacao ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header .logo{
+    width: 150px;
+}
+
+.navegacao ul li a{
+    color: black;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+}    
+
+.navegacao ul li a:hover {
+    border-bottom: 2px solid #0072C6;
+    color: #0072C6;
+}
+
+.navegacao .Buscar {
+    width: 22px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.navegacao .Usuario{
+    width: 40px;
+    cursor: pointer;
+}
+
+
+/* Main */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1.5em;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+}
+
+main section .logoSona{
+    width: 20em;
+    margin: 3em 0;
+}
+
+main section .btn_box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn_box .btn{
+    padding: 20px 45px;
+    /* background-color: ; */
+    color: #fff;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #fff;
+    transition: all .3s;
+    border-radius: 3.5px;
+
+}
+
+.btn_box .btn:focus{
+    background: white;
+}
+
+/* Botão XBOX */
+.btn_box #Xbox:hover{
+    background: #107C10;
+    color: white;
+}
+
+/* Botão Playstation */
+.btn_box #Playstation:hover{
+ background: #0070D1;
+ color: white;
+}
+
+/* Botão PC */
+.btn_box #PC:hover{
+    background: #6c757d;
+    color: white;
+}
+
+main section .text{
+    color: #fff;
+    line-height: 22px;
+}
+
+.btn_box2{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: #0072C6;
+    padding: 15px 45px;
+    margin-top: 2em;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 4px solid #fff;
+    font-size: 15px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn_box2:hover{
+    background: #E51717;
+}
+
+.btn_box2 .play{
+    width: 1.4em;
+}
+
+footer .cards{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 23em;
+    margin-top: 1.5em;
+}
+
+footer .cards .card{
+    height: 180px;
+    max-width: 300px;
+    box-shadow: 12px 0px 32px 2px black;
+    margin-left: -120px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+footer .cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards .card:hover{
+    transform: translateY(-16px) rotate(3deg);
+}
+
+.cards .card:hover ~ .card{
+     transform: translateX(140px);
+}
