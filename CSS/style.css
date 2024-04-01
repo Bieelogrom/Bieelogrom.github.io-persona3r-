@@ -8,7 +8,7 @@
 }
 
 body{
-    background: url(IMG/FUNDO.jpeg);
+    background: url(../IMG/FUNDO.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     /* overflow: hidden; */
